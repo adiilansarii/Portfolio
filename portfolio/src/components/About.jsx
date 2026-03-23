@@ -40,7 +40,7 @@ export default function About() {
           
           <div className="w-48 h-48 md:w-[400px] md:h-[400px] overflow-hidden rounded-full border-2 border-zinc-900 shadow-2xl">
             <img 
-              src="/about.png" 
+              src="/about.jpg" 
               alt="Adil Ansari" 
               className="w-full h-full object-cover" 
             />
