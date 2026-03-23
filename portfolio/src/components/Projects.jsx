@@ -3,19 +3,22 @@ import { ExternalLink } from 'lucide-react';
 
 const myProjects = [
   { 
-    title: "Lost Hive", 
-    desc: "A community-driven lost and found platform for NSUT students, featuring real-time tracking and image uploads for lost items.", 
-    img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=500" 
+    title: "Sendit", 
+    desc: "A high-performance platform using AWS S3 and multipart streaming to send photos and audio files securely in seconds.", 
+    img: "./sendit.png",
+    link: "https://sendit-ruby.vercel.app/"   // 👈 add link
   },
   { 
     title: "Needit", 
-    desc: "A full-stack service marketplace that connects local freelancers with clients, featuring secure booking and profile management.", 
-    img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500" 
+    desc: "An interview insights platform where students share real-world experiences to help peers navigate college placements and preparation.", 
+    img: "./needit.png",
+    link: "https://needit-interview.vercel.app/"
   },
   { 
-    title: "Sendit", 
-    desc: "An automated logistics and parcel tracking system designed to streamline delivery status updates and route optimization.", 
-    img: "https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=500" 
+    title: "Grabit", 
+    desc: "A campus item recovery portal that helps students report and find lost belongings using image uploads and real-time filtering.", 
+    img: "./grabit.png",
+    link: "https://lost-hive.vercel.app/"
   }
 ];
 
@@ -51,7 +54,7 @@ export default function Projects() {
                 </p>
               </div>
               <a 
-                href="#" 
+                href={proj.link}   // 👈 dynamic link
                 target="_blank" 
                 rel="noreferrer"
                 className="p-3 bg-white text-black rounded-full hover:bg-zinc-300 transition-colors shrink-0 shadow-lg"
